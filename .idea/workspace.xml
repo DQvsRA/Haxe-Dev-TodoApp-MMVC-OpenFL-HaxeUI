@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a99f217-3853-4629-b65b-5f5e760dce10" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bat/setup.bat" afterPath="$PROJECT_DIR$/bat/setup.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.xml" afterPath="$PROJECT_DIR$/project.xml" />
     </list>
     <ignored path="MMVC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,8 +100,8 @@
           <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+                <state relative-caret-position="85">
+                  <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -2051,12 +2048,12 @@
       <workItem from="1511019774805" duration="24903000" />
       <workItem from="1511077590781" duration="6119000" />
       <workItem from="1511104722083" duration="16728000" />
-      <workItem from="1511151652930" duration="19450000" />
+      <workItem from="1511151652930" duration="19561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117694000" />
+    <option name="totallyTimeSpent" value="117805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1642" height="1050" extended-state="0" />
@@ -2536,8 +2533,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="85">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
           <folding />
         </state>
       </provider>
