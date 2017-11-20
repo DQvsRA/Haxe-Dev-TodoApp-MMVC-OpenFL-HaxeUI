@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="MMVCApplication" package="app" version="1.0.0" company="Vladimir Minkin" />
+	<app main="Application" path="bin" file="Application" />
+	<app swf-version="27" />
+
+	<window hardware="true" allow-shaders="true" require-shaders="true" depth-buffer="false" stencil-buffer="false" />
+	<window fullscreen="false" resizable="true" borderless="false" vsync="false" />
+
+	<source path="libs" />
+	<source path="src" />
+
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	<!--<haxelib name="tweenx" />-->
+	<!--<haxelib name="tweenxcore" />-->
+	<haxelib name="haxeui-core" />
+	<haxelib name="haxeui-openfl" />
+
+</project>

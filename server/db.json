@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "text": "Eat less",
+      "completed": true,
+      "createdAt": 1511176810219,
+      "id": 1
+    },
+    {
+      "text": "Read more",
+      "completed": true,
+      "createdAt": 1511176808550,
+      "id": 2
+    },
+    {
+      "text": "Exercise",
+      "completed": false,
+      "createdAt": 1511176814072,
+      "id": 3
+    },
+    {
+      "text": "Do code",
+      "completed": true,
+      "createdAt": 1511176812919,
+      "id": 4
+    },
+    {
+      "text": "Start work",
+      "completed": false,
+      "createdAt": 1511176816118,
+      "id": 6
+    }
+  ]
+}
