@@ -13,8 +13,6 @@
 
 	<haxelib name="openfl" />
 	<haxelib name="actuate" />
-	<!--<haxelib name="tweenx" />-->
-	<!--<haxelib name="tweenxcore" />-->
 	<haxelib name="haxeui-core" />
 	<haxelib name="haxeui-openfl" />
 
