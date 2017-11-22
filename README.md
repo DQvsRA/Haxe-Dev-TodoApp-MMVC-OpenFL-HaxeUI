@@ -13,3 +13,5 @@ Setup:
     haxelib install haxeui-core
     haxelib install  haxeui-openfl
 5. Run project in Flash only
+
+![How it's looks like](https://s1.gifyu.com/images/animka00.gif)
