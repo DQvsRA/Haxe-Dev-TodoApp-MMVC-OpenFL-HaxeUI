@@ -10,7 +10,7 @@
     <option name="outputFileName" value="Main.swf" />
     <option name="outputFolder" value="$MODULE_DIR$/bin" />
   </component>
-  <component name="NewModuleRootManager" inherit-compiler-output="false">
+  <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/bin" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
@@ -18,60 +18,49 @@
       <sourceFolder url="file://$MODULE_DIR$/libs" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="jdk" jdkName="Haxe 4.0.0" jdkType="Haxe toolkit" />
+    <orderEntry type="jdk" jdkName="Haxe 3.4.4" jdkType="Haxe toolkit" />
     <orderEntry type="library" name="openfl" level="project" />
     <orderEntry type="module-library">
       <library name="haxelib|openfl">
         <CLASSES>
-          <root url="file://F:/SDK/Haxe/libs/openfl/6,3,0" />
+          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/openfl/6,5,3" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://F:/SDK/Haxe/libs/openfl/6,3,0" />
+          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/openfl/6,5,3" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library name="haxelib|actuate">
         <CLASSES>
-          <root url="file://F:/SDK/Haxe/libs/actuate/1,8,7" />
+          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/actuate/1,8,7" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://F:/SDK/Haxe/libs/actuate/1,8,7" />
+          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/actuate/1,8,7" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library name="haxelib|haxeui-core">
         <CLASSES>
-          <root url="file://F:/SDK/Haxe/libs/haxeui-core/git" />
+          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/haxeui-core/0,0,1" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://F:/SDK/Haxe/libs/haxeui-core/git" />
+          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/haxeui-core/0,0,1" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library name="haxelib|haxeui-openfl">
         <CLASSES>
-          <root url="file://F:/SDK/Haxe/libs/haxeui-openfl" />
+          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/haxeui-openfl/0,0,1" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://F:/SDK/Haxe/libs/haxeui-openfl" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="haxelib|F:/SDK/Haxe/libs/hscript/2,1,1">
-        <CLASSES>
-          <root url="file://F:/SDK/Haxe/libs/hscript/2,1,1" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://F:/SDK/Haxe/libs/hscript/2,1,1" />
+          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/haxeui-openfl/0,0,1" />
         </SOURCES>
       </library>
     </orderEntry>

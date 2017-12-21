@@ -14,7 +14,7 @@ class InfoPopup extends Sprite
 {
     public var _messageTF:TextField;
     private var _messageBox:Sprite;
-    private var _messageTweenActive:Bool;
+    private var _messageTweenActive:Bool = false;
     private var _messageStack:Array<String> = [];
 
     public function new() { super();

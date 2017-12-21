@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="openfl" type="Haxe">
     <CLASSES>
-      <root url="file://F:/SDK/Haxe/libs/openfl/6,3,0/openfl" />
+      <root url="file://$PROJECT_DIR$/../../../SDKs/Haxe/Haxelibs/openfl/6,5,3/openfl" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
