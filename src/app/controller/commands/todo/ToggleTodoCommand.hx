@@ -1,6 +1,6 @@
 package app.controller.commands.todo;
 
-import app.model.vos.TodoVO;
+import app.model.vos.Todo;
 import app.controller.signals.InfoPopupMediatorMessageSignal;
 import consts.strings.MessageStrings;
 import app.controller.signals.todolist.ToggleTodoSignal;
@@ -31,13 +31,13 @@ class ToggleTodoCommand extends Command
         :   MessageStrings.PROBLEM_UPDATE_TODO
         ;
 
-        var todo:TodoVO = todoModel.findTodoByID(id);
+        var todo:Todo = todoModel.findTodoByID(id);
 
         infoPopupMediatorSignal.dispatch(
             InfoPopupMediatorMessageSignal.SHOW_INFO,
             StringTools.replace(
-                StringTools.replace(message, "%id%", cast id),
-                "%completed%", cast todo.completed
+                StringTools.replace(message, "%id%", Std.string(id)),
+                "%completed%", Std.string(todo.completed)
             )
         );
     }

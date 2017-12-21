@@ -31,38 +31,5 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
-      <library name="haxelib|actuate">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/actuate/1,8,7" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/actuate/1,8,7" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="haxelib|haxeui-core">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/haxeui-core/0,0,1" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/haxeui-core/0,0,1" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="haxelib|haxeui-openfl">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/haxeui-openfl/0,0,1" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../../../SDKs/Haxe/Haxelibs/haxeui-openfl/0,0,1" />
-        </SOURCES>
-      </library>
-    </orderEntry>
   </component>
 </module>

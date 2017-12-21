@@ -5,7 +5,7 @@ import app.controller.signals.todoform.CreateTodoSignal;
 import app.controller.signals.TodoFormMediatorMessageSignal;
 import app.controller.signals.TodoListMediatorMessageSignal;
 import consts.strings.MessageStrings;
-import app.model.vos.TodoVO;
+import app.model.vos.Todo;
 import app.model.TodoModel;
 import mmvc.impl.Command;
 
@@ -43,7 +43,7 @@ class CreateTodoCommand extends Command
         );
     }
 
-    private function CreateTodoCallback(?todoVO:TodoVO = null):Void
+    private function CreateTodoCallback(?todoVO:Todo = null):Void
     {
         var success:Bool = todoVO != null;
 

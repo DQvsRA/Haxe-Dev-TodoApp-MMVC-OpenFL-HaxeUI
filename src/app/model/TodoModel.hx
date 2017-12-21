@@ -3,21 +3,21 @@ package app.model;
 import app.model.services.ServerService;
 import openfl.net.URLRequestMethod;
 import consts.network.ServerAPI;
-import app.model.vos.TodoVO;
+import app.model.vos.Todo;
 import mmvc.impl.Actor;
 
 class TodoModel extends Actor
 {
-    private var _data:Array<TodoVO> = new Array<TodoVO>();
+    private var _data:Array<Todo> = new Array<Todo>();
     private var _serverService:ServerService = ServerService.getInstance();
 
     private var SERVER_TODO_ROUTE(default, never):String = ServerAPI.GATEWAY + ServerAPI.ROUTE_TODOS;
 
-    public function findTodoByID(value:Int):TodoVO { for(todo in _data) { if(todo.id == value) return todo; } return null; }
+    public function findTodoByID(value:Int):Todo { for(todo in _data) { if(todo.id == value) return todo; } return null; }
 
     public function toggleTodo(id:Int, callback:Bool -> Void):Void
     {
-        var todoVO:TodoVO = findTodoByID(id);
+        var todoVO:Todo = findTodoByID(id);
         _serverService.performRequest(
 
             SERVER_TODO_ROUTE + "/" + id,
@@ -39,7 +39,7 @@ class TodoModel extends Actor
     {
         trace("-> updateTodo: id = " + id + " text = " + text);
 
-        var todoVO:TodoVO = findTodoByID(id);
+        var todoVO:Todo = findTodoByID(id);
         _serverService.performRequest(
 
             SERVER_TODO_ROUTE + "/" + id,
@@ -55,7 +55,7 @@ class TodoModel extends Actor
         );
     }
 
-    public function createTodo(text:String, callback:?TodoVO -> Void):Void
+    public function createTodo(text:String, callback:?Todo -> Void):Void
     {
         trace("-> createTodo: text = " + text);
 
@@ -68,7 +68,7 @@ class TodoModel extends Actor
             {
                 if(error != null) callback(null);
                 else {
-                    var todoVO:TodoVO = new TodoVO(
+                    var todoVO:Todo = new Todo(
                         result.id,
                         result.text,
                         result.completed ? result.completed != "false" : false
@@ -99,7 +99,7 @@ class TodoModel extends Actor
         );
     }
 
-    public function loadTodos( callback: Array<TodoVO> -> Void):Void
+    public function loadTodos( callback: Array<Todo> -> Void):Void
     {
         trace("-> loadTodos");
 
@@ -116,7 +116,7 @@ class TodoModel extends Actor
                     var item:Dynamic;
                     while(iter.hasNext()) {
                         item = iter.next();
-                        _data.push(new TodoVO(
+                        _data.push(new Todo(
                             item.id,
                             item.text,
                             item.completed ? item.completed != "false" : false

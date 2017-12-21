@@ -1,6 +1,6 @@
 package app.model.vos;
 
-class TodoVO
+class Todo
 {
     public var id:Int;
     public var text:String;

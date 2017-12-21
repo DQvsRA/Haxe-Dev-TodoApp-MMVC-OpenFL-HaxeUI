@@ -5,7 +5,7 @@ import app.controller.signals.todolist.UpdateTodoSignal;
 import app.controller.signals.todolist.DeleteTodoSignal;
 import app.controller.signals.TodoListMediatorMessageSignal;
 import consts.actions.TodoAction;
-import app.model.vos.TodoVO;
+import app.model.vos.Todo;
 import app.view.components.TodoList;
 import mmvc.impl.Mediator;
 
@@ -40,7 +40,7 @@ class TodoListMediator extends Mediator<TodoList>
                 updateTodoSignal.complete.addOnce(function(success:Bool):Void {
                     todoList.unlock();
                 });
-                var text:String = cast data;
+                var text:String = Std.string(data);
                 updateTodoSignal.dispatch(id, text);
             }
             case TodoAction.TOGGLE:
@@ -71,13 +71,13 @@ class TodoListMediator extends Mediator<TodoList>
         switch(type) {
             case TodoListMediatorMessageSignal.ADD_TODO:
             {
-                var todo:TodoVO = cast data;
+                var todo:Todo = cast data;
                 var todoList:TodoList = cast getViewComponent();
                 todoList.addTodo(todo.id, todo.text, todo.completed);
             }
             case TodoListMediatorMessageSignal.SETUP_TODOS:
             {
-                var arr:Array<TodoVO> = cast data;
+                var arr:Array<Todo> = cast data;
                 var todoList:TodoList = cast getViewComponent();
                 for(todo in arr) todoList.addTodo(
                     todo.id,
