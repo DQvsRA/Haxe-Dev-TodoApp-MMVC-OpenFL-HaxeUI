@@ -1,9 +1,8 @@
 package app.controller.commands.prepare;
-
 import app.controller.signals.InfoPopupMediatorMessageSignal;
 import app.controller.signals.TodoListMediatorMessageSignal;
-import consts.strings.MessageStrings;
 import app.model.TodoModel;
+import consts.strings.MessageStrings;
 import mmvc.impl.Command;
 
 class PrepareCompleteCommand extends Command

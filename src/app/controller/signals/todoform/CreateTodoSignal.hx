@@ -1,5 +1,4 @@
 package app.controller.signals.todoform;
-
 import msignal.Signal.Signal1;
 
 class CreateTodoSignal extends Signal1<String>{

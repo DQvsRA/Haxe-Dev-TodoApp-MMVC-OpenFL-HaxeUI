@@ -1,10 +1,9 @@
 package app.controller.commands.todo;
-
-import app.model.vos.Todo;
 import app.controller.signals.InfoPopupMediatorMessageSignal;
-import consts.strings.MessageStrings;
 import app.controller.signals.todolist.ToggleTodoSignal;
 import app.model.TodoModel;
+import app.model.vos.Todo;
+import consts.strings.MessageStrings;
 import mmvc.impl.Command;
 
 class ToggleTodoCommand extends Command

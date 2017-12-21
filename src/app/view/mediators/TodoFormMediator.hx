@@ -1,9 +1,8 @@
 package app.view.mediators;
-
-import app.controller.signals.TodoFormMediatorMessageSignal;
 import app.controller.signals.todoform.CreateTodoSignal;
-import haxe.ui.core.MouseEvent;
+import app.controller.signals.TodoFormMediatorMessageSignal;
 import app.view.components.TodoForm;
+import haxe.ui.core.MouseEvent;
 import mmvc.impl.Mediator;
 
 class TodoFormMediator extends Mediator<TodoForm>

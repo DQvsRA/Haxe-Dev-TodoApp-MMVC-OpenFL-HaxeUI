@@ -1,10 +1,9 @@
 package app.model;
-
 import app.model.services.ServerService;
-import openfl.net.URLRequestMethod;
-import consts.network.ServerAPI;
 import app.model.vos.Todo;
+import consts.network.ServerAPI;
 import mmvc.impl.Actor;
+import openfl.net.URLRequestMethod;
 
 class TodoModel extends Actor
 {
@@ -31,7 +30,7 @@ class TodoModel extends Actor
                 callback(success);
             },
 
-            [ "text" => todoVO.text, "completed" => !todoVO.completed ]
+            ["text" => todoVO.text, "completed" => !todoVO.completed]
         );
     }
 
@@ -51,7 +50,7 @@ class TodoModel extends Actor
                 callback(error == null);
             },
 
-            [ "text" => text, "completed" => todoVO.completed ]
+            ["text" => text, "completed" => todoVO.completed]
         );
     }
 
@@ -78,7 +77,7 @@ class TodoModel extends Actor
                 }
             },
 
-            [ "text" => text, "completed" => false ]
+            ["text" => text, "completed" => false]
         );
     }
 

@@ -1,13 +1,12 @@
 package app.controller.commands.prepare;
-
-import app.controller.signals.InfoPopupMediatorMessageSignal;
-import app.controller.signals.TodoFormMediatorMessageSignal;
-import app.controller.signals.TodoListMediatorMessageSignal;
 import app.controller.signals.ApplicationMediatorMessageSignal;
-import app.controller.signals.todolist.DeleteTodoSignal;
-import app.controller.signals.todolist.UpdateTodoSignal;
-import app.controller.signals.todolist.ToggleTodoSignal;
+import app.controller.signals.InfoPopupMediatorMessageSignal;
 import app.controller.signals.todoform.CreateTodoSignal;
+import app.controller.signals.TodoFormMediatorMessageSignal;
+import app.controller.signals.todolist.DeleteTodoSignal;
+import app.controller.signals.todolist.ToggleTodoSignal;
+import app.controller.signals.todolist.UpdateTodoSignal;
+import app.controller.signals.TodoListMediatorMessageSignal;
 import app.model.TodoModel;
 import mmvc.impl.Command;
 

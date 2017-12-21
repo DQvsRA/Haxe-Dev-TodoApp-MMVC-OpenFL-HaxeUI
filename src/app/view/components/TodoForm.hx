@@ -1,12 +1,11 @@
 package app.view.components;
-
-import haxe.ui.Toolkit;
+import consts.Defaults;
 import haxe.ui.components.Button;
 import haxe.ui.components.TextField;
 import haxe.ui.core.Component;
-import consts.Defaults;
-import openfl.events.Event;
+import haxe.ui.Toolkit;
 import openfl.display.Sprite;
+import openfl.events.Event;
 
 class TodoForm extends Sprite
 {
@@ -27,11 +26,6 @@ class TodoForm extends Sprite
 
         var W:Int = cast this.stage.width * Defaults.COMPONENT__FACTOR__WIDTH - MARGIN_LEFT_RIGHT * 2;
         var H:Int = cast this.stage.height * Defaults.COMPONENT__FACTOR__HEADER - MARGIN_TOP_BOTTOM * 2;
-
-//        var g:Graphics = this.graphics;
-//        g.beginFill(0xf1f1f1, 0.5);
-//        g.drawRect(0,0, W, H);
-//        g.endFill();
 
         this.x = ( stage.width - W ) * 0.5;
         this.y = MARGIN_TOP_BOTTOM;

@@ -1,9 +1,8 @@
 package app.controller.commands.todo;
-
 import app.controller.signals.InfoPopupMediatorMessageSignal;
-import consts.strings.MessageStrings;
 import app.controller.signals.todolist.UpdateTodoSignal;
 import app.model.TodoModel;
+import consts.strings.MessageStrings;
 import mmvc.impl.Command;
 
 class UpdateTodoCommand extends Command

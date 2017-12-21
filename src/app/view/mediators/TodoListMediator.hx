@@ -1,12 +1,11 @@
 package app.view.mediators;
-
+import app.controller.signals.todolist.DeleteTodoSignal;
 import app.controller.signals.todolist.ToggleTodoSignal;
 import app.controller.signals.todolist.UpdateTodoSignal;
-import app.controller.signals.todolist.DeleteTodoSignal;
 import app.controller.signals.TodoListMediatorMessageSignal;
-import consts.actions.TodoAction;
 import app.model.vos.Todo;
 import app.view.components.TodoList;
+import consts.actions.TodoAction;
 import mmvc.impl.Mediator;
 
 class TodoListMediator extends Mediator<TodoList>
@@ -37,20 +36,24 @@ class TodoListMediator extends Mediator<TodoList>
         switch(action) {
             case TodoAction.UPDATE:
             {
-                updateTodoSignal.complete.addOnce(function(success:Bool):Void {
-                    todoList.unlock();
-                });
+                updateTodoSignal.complete.addOnce(
+					function(success:Bool):Void {
+                    	todoList.unlock();
+                	}
+				);
                 var text:String = Std.string(data);
                 updateTodoSignal.dispatch(id, text);
             }
             case TodoAction.TOGGLE:
             {
-                toggleTodoSignal.complete.addOnce(function(success:Bool):Void {
-                    todoList.unlock();
-                    if(success == false) {
-                        todoList.toggleTodo(id);
-                    }
-                });
+                toggleTodoSignal.complete.addOnce(
+					function(success:Bool):Void {
+						todoList.unlock();
+						if(success == false) {
+							todoList.toggleTodo(id);
+						}
+                	}
+				);
                 var selected:Bool = cast data;
                 toggleTodoSignal.dispatch(id);
             }

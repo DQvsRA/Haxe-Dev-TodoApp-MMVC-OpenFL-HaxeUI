@@ -1,14 +1,13 @@
 package app.view.components.popups;
-
-import openfl.events.Event;
-import motion.easing.Quad;
-import motion.Actuate;
-import openfl.display.Graphics;
 import consts.strings.MessageStrings;
-import openfl.text.TextFormatAlign;
-import openfl.text.TextFieldAutoSize;
-import openfl.text.TextField;
+import motion.Actuate;
+import motion.easing.Quad;
+import openfl.display.Graphics;
 import openfl.display.Sprite;
+import openfl.events.Event;
+import openfl.text.TextField;
+import openfl.text.TextFieldAutoSize;
+import openfl.text.TextFormatAlign;
 
 class InfoPopup extends Sprite
 {

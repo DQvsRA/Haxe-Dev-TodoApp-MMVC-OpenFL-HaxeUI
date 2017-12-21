@@ -1,13 +1,12 @@
 package app.controller.commands.prepare;
-
-import app.controller.signals.todolist.ToggleTodoSignal;
-import app.controller.signals.todolist.UpdateTodoSignal;
-import app.controller.signals.todoform.CreateTodoSignal;
-import app.controller.signals.todolist.DeleteTodoSignal;
 import app.controller.commands.todo.CreateTodoCommand;
+import app.controller.commands.todo.DeleteTodoCommand;
 import app.controller.commands.todo.ToggleTodoCommand;
 import app.controller.commands.todo.UpdateTodoCommand;
-import app.controller.commands.todo.DeleteTodoCommand;
+import app.controller.signals.todoform.CreateTodoSignal;
+import app.controller.signals.todolist.DeleteTodoSignal;
+import app.controller.signals.todolist.ToggleTodoSignal;
+import app.controller.signals.todolist.UpdateTodoSignal;
 import mmvc.impl.Command;
 
 class PrepareControllerCommand extends Command

@@ -1,15 +1,13 @@
 package app.model.services;
-
-import openfl.errors.Error;
+import haxe.Json;
+import openfl.events.Event;
+import openfl.events.IOErrorEvent;
+import openfl.net.URLLoader;
 import openfl.net.URLLoaderDataFormat;
-import openfl.net.URLVariables;
+import openfl.net.URLRequest;
 import openfl.net.URLRequestHeader;
 import openfl.net.URLRequestMethod;
-import haxe.Json;
-import openfl.events.IOErrorEvent;
-import openfl.events.Event;
-import openfl.net.URLLoader;
-import openfl.net.URLRequest;
+import openfl.net.URLVariables;
 
 class ServerService
 {
@@ -24,9 +22,9 @@ class ServerService
         callback    : String->Dynamic->Void,
         ?params     : Map<String,Dynamic>
     ):Void {
-        var onComplete  : Event->Void;
-        var request     : URLRequest = new URLRequest(route);
-        var loader      : URLLoader = new URLLoader();
+        var onComplete:Event->Void;
+        var request:URLRequest = new URLRequest(route);
+        var loader:URLLoader = new URLLoader();
 
         trace("> route = " + route);
         trace("> method = " + method);

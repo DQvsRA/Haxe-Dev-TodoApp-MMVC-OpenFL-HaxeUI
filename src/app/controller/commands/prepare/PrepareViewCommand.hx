@@ -1,14 +1,12 @@
 package app.controller.commands.prepare;
-
 import app.view.components.popups.InfoPopup;
+import app.view.components.TodoForm;
+import app.view.components.TodoList;
+import app.view.mediators.ApplicationMediator;
 import app.view.mediators.InfoPopupMediator;
 import app.view.mediators.TodoFormMediator;
-import app.view.components.TodoForm;
-import app.view.components.TodoForm;
-import flash.display.Sprite;
-import app.view.components.TodoList;
 import app.view.mediators.TodoListMediator;
-import app.view.mediators.ApplicationMediator;
+import flash.display.Sprite;
 import mmvc.impl.Command;
 
 class PrepareViewCommand extends Command

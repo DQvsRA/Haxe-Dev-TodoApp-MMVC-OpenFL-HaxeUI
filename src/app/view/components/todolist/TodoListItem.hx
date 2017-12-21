@@ -1,14 +1,13 @@
 package app.view.components.todolist;
-
-import motion.Actuate;
 import consts.actions.TodoAction;
-import haxe.ui.core.MouseEvent;
-import openfl.display.Sprite;
-import haxe.ui.core.Component;
-import haxe.ui.Toolkit;
 import haxe.ui.components.Button;
-import haxe.ui.components.TextField;
 import haxe.ui.components.CheckBox;
+import haxe.ui.components.TextField;
+import haxe.ui.core.Component;
+import haxe.ui.core.MouseEvent;
+import haxe.ui.Toolkit;
+import motion.Actuate;
+import openfl.display.Sprite;
 import openfl.events.Event;
 
 class TodoListItem extends Sprite

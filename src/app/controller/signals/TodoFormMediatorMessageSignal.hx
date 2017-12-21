@@ -1,5 +1,4 @@
 package app.controller.signals;
-
 import msignal.Signal.Signal2;
 
 class TodoFormMediatorMessageSignal extends Signal2<String, Dynamic>

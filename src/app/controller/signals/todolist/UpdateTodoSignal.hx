@@ -1,5 +1,4 @@
 package app.controller.signals.todolist;
-
 import msignal.Signal.Signal1;
 import msignal.Signal.Signal2;
 

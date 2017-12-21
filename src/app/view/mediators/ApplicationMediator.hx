@@ -1,11 +1,9 @@
 package app.view.mediators;
-
 import app.controller.signals.ApplicationMediatorMessageSignal;
 import consts.Defaults;
-
-import openfl.display.Sprite;
 import flash.display.Graphics;
 import mmvc.impl.Mediator;
+import openfl.display.Sprite;
 
 class ApplicationMediator extends Mediator<Application>
 {

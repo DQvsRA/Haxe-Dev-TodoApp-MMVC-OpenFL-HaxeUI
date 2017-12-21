@@ -1,9 +1,8 @@
 package app;
-
 import app.controller.commands.StartupCommand;
-import msignal.Signal.Signal0;
 import mmvc.api.IViewContainer;
 import mmvc.impl.Context;
+import msignal.Signal.Signal0;
 
 class ApplicationContext extends Context
 {

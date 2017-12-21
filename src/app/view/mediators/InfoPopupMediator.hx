@@ -1,5 +1,4 @@
 package app.view.mediators;
-
 import app.controller.signals.InfoPopupMediatorMessageSignal;
 import app.view.components.popups.InfoPopup;
 import mmvc.impl.Mediator;

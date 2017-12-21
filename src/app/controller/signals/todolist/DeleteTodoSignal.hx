@@ -1,5 +1,4 @@
 package app.controller.signals.todolist;
-
 import msignal.Signal.Signal1;
 
 class DeleteTodoSignal extends Signal1<Int>{

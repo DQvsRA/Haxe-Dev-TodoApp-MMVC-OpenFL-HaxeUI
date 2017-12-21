@@ -1,19 +1,13 @@
 package app.view.components;
-
-import haxe.ui.containers.VBox;
-import haxe.ui.containers.ScrollView;
+import app.view.components.todolist.TodoListItem;
 import consts.actions.TodoAction;
 import consts.Defaults;
-import app.view.components.todolist.TodoListItem;
 import openfl.display.Graphics;
-import openfl.events.Event;
 import openfl.display.Sprite;
+import openfl.events.Event;
 
 class TodoList extends Sprite
 {
-//    private var _scrollList:ScrollView = new ScrollView();
-//    private var _layout:VBox = new VBox();
-
     public var onAction(null, set):Int->TodoAction->Dynamic->Void;
     public function set_onAction(value:Int->TodoAction->Dynamic->Void){
         this.onAction = value;
@@ -36,11 +30,6 @@ class TodoList extends Sprite
         g.beginFill(0xf8f8f8);
         g.drawRect(0,0, W, H);
         g.endFill();
-
-//        _scrollList.width = W;
-//        _scrollList.height = H;
-//        _scrollList.addChild(_layout);
-//        this.addChild(_scrollList);
 
         this.x = (stage.width - W ) * 0.5;
         this.y = stage.height - H;
@@ -83,7 +72,6 @@ class TodoList extends Sprite
         item.text = text;
         item.completed = completed;
         item.registerEventListener(this.onAction);
-//        _layout.addChild(item.layout);
         this.addChild(item);
     }
 }

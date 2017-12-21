@@ -1,10 +1,9 @@
 package app.controller.commands;
-
-import mmvc.impl.MacroCommand;
-import app.controller.commands.prepare.PrepareInjectionCommand;
 import app.controller.commands.prepare.PrepareCompleteCommand;
-import app.controller.commands.prepare.PrepareViewCommand;
 import app.controller.commands.prepare.PrepareControllerCommand;
+import app.controller.commands.prepare.PrepareInjectionCommand;
+import app.controller.commands.prepare.PrepareViewCommand;
+import mmvc.impl.MacroCommand;
 
 class StartupCommand extends MacroCommand
 {

@@ -1,12 +1,11 @@
 package app.controller.commands.todo;
-
 import app.controller.signals.InfoPopupMediatorMessageSignal;
 import app.controller.signals.todoform.CreateTodoSignal;
 import app.controller.signals.TodoFormMediatorMessageSignal;
 import app.controller.signals.TodoListMediatorMessageSignal;
-import consts.strings.MessageStrings;
-import app.model.vos.Todo;
 import app.model.TodoModel;
+import app.model.vos.Todo;
+import consts.strings.MessageStrings;
 import mmvc.impl.Command;
 
 class CreateTodoCommand extends Command

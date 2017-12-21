@@ -1,9 +1,8 @@
 package app.controller.commands.todo;
-
 import app.controller.signals.InfoPopupMediatorMessageSignal;
 import app.controller.signals.todolist.DeleteTodoSignal;
-import consts.strings.MessageStrings;
 import app.model.TodoModel;
+import consts.strings.MessageStrings;
 import mmvc.impl.Command;
 
 class DeleteTodoCommand extends Command
